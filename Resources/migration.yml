@@ -810,3 +810,6 @@ MobDwarf: MobHuman
 OrganDwarfHeart: OrganHumanHeart
 OrganDwarfStomach: OrganHumanStomach
 OrganDwarfLiver: OrganHumanLiver
+
+# 2026-02-13
+DefaultStationBeaconReporter: DefaultStationBeaconNewsroom
