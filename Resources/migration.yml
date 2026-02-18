@@ -810,3 +810,8 @@ MobDwarf: MobHuman
 OrganDwarfHeart: OrganHumanHeart
 OrganDwarfStomach: OrganHumanStomach
 OrganDwarfLiver: OrganHumanLiver
+
+# 2026-02-13
+BoxMime: BoxSurvival
+BoxMimeNitrogen: BoxSurvivalNitrogen
+BoxMimeMoth: BoxSurvival
