@@ -1,38 +1,86 @@
-<div class="header" align="center">  
-<img alt="Space Station 14" width="880" height="300" src="https://raw.githubusercontent.com/space-wizards/asset-dump/de329a7898bb716b9d5ba9a0cd07f38e61f1ed05/github-logo.svg">  
+<div class="header" align="center">
+<img alt="Continuum (SS14 fork)" width="880" height="300" src="REPLACE_WITH_YOUR_BANNER_URL_OR_LOCAL_PATH">
 </div>
 
-Space Station 14 is a remake of SS13 that runs on [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), our homegrown engine written in C#.
+# Continuum — a Space Station 14 Fork
 
-This is the primary repo for Space Station 14. To prevent people forking RobustToolbox, a "content" pack is loaded by the client and server. This content pack contains everything needed to play the game on one specific server.
+**Continuum** is our own fork of **Space Station 14**, built on the [Robust Toolbox](https://github.com/space-wizards/RobustToolbox) engine (C#).
 
-If you want to host or create content for SS14, this is the repo you need. It contains both RobustToolbox and the content pack for development of new content packs.
+We’re in the early days: this repo currently focuses on **stability, QoL improvements, and small, low-risk features** as we work toward our first release.
+
+## What is Continuum?
+
+Continuum exists because we want to explore **a distinct SS14 experience** without immediately committing to a single “big gimmick.”
+Instead of hard-locking the fork into one theme right away, we’re building a foundation that supports experimentation:
+
+- **A stable baseline** we can ship and iterate on
+- **Modular features** that can be toggled, tuned, or removed without destabilizing the game
+- **A clear path to a unique identity** once we’ve tested what’s fun in live rounds
+
+If you’re looking for a fork with a strong direction *today*, that’s not us *yet* — but if you want to help shape what Continuum becomes, you’re in the right place.
+
+### Current Focus (R0.1)
+**R0.1 — Stabilization & QoL**
+- Quality-of-life changes (polish, clarity, small improvements)
+- Minimal-risk features
+- CI-required builds/tests + basic gameplay smoke tests
+- Changelog + upgrade notes (when needed)
+
+### Future Direction (Open)
+We’re intentionally keeping the long-term direction open, but we’re interested in exploring ideas like:
+- **Round-to-round continuity** (light persistent progression, station “history,” meta-goals)
+- **Events & anomalies** (opt-in, configurable systems; “weird but fair”)
+- **Roleplay-supporting tools** (admin tooling, better onboarding, better reporting)
+- **Content identity** (jobs/antags/setting that feels distinct)
+
+Nothing here is promised — this is a *playground with standards*, not a random feature dump.
+
+---
+
+## Upstream / Credits
+
+This project is based on **Space Station 14** and uses the upstream engine + content structure.
+If you want to host or create content for SS14 in general, the upstream repo may be what you want:
+- Upstream: https://github.com/space-wizards/space-station-14
+
+---
 
 ## Links
 
-<div class="header" align="center">  
+<div class="header" align="center">
 
-[Website](https://spacestation14.com/) | [Discord](https://discord.ss14.io/) | [Forum](https://forum.spacestation14.com/) | [Mastodon](https://mastodon.gamedev.place/@spacestation14) | [Patreon](https://www.patreon.com/spacestation14) | [Steam](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Standalone Download](https://spacestation14.com/about/nightlies/)  
+<!-- Replace these with your fork links -->
+[Discord](REPLACE_ME) | [Website](REPLACE_ME) | [Roadmap / Milestones](REPLACE_ME) | [Issue Tracker](../../issues)
 
 </div>
 
-## Documentation/Wiki
+---
 
-Our [docs site](https://docs.spacestation14.com/) has documentation on SS14's content, engine, game design, and more.  
-Additionally, see these resources for license and attribution information:  
-- [Robust Generic Attribution](https://docs.spacestation14.com/en/specifications/robust-generic-attribution.html)  
+## Documentation / Wiki
+
+Upstream documentation is here:
+https://docs.spacestation14.com/
+
+License and attribution resources:
+- [Robust Generic Attribution](https://docs.spacestation14.com/en/specifications/robust-generic-attribution.html)
 - [Robust Station Image](https://docs.spacestation14.com/en/specifications/robust-station-image.html)
 
-We also have lots of resources for new contributors to the project.
+---
 
 ## Contributing
 
-We are happy to accept contributions from anybody. Get in Discord if you want to help. We've got a [list of issues](https://github.com/space-wizards/space-station-14-content/issues) that need to be done and anybody can pick them up. Don't be afraid to ask for help either!  
-Just make sure your changes and pull requests are in accordance with the [contribution guidelines](https://docs.spacestation14.com/en/general-development/codebase-info/pull-request-guidelines.html).
+We accept contributions from anybody — especially early on, when direction is still being shaped.
 
-We are not currently accepting translations of the game on our main repository. If you would like to translate the game into another language, consider creating a fork or contributing to a fork.
+- Check the [Issues](../../issues) for work we’ve marked as beginner-friendly or high priority.
+- Please keep PRs focused and small: **R0.1 prioritizes stability and low-risk changes.**
+- If you’re proposing a bigger concept, open an issue first so we can discuss scope and risk.
+
+> Upstream note: The SS14 main repository is not currently accepting translations. Forks are encouraged to manage translations independently.
+
+---
 
 ## AI-generated contributions disclaimer
+
 This project does not accept low-effort or wholesale AI-generated contributions. Examples include, but are not limited to:
 
 - Any code (including yaml) generated by tools like GitHub Copilot, ChatGPT, or similar.
@@ -41,28 +89,35 @@ This project does not accept low-effort or wholesale AI-generated contributions.
 
 Exceptions to this are simple tools like Rider's single-line completion feature.
 
+---
+
 ## Building
 
 1. Clone this repo:
-```shell
-git clone https://github.com/space-wizards/space-station-14.git
-```
-2. Go to the project folder and run `RUN_THIS.py` to initialize the submodules and load the engine:
-```shell
-cd space-station-14
-python RUN_THIS.py
-```
-3. Compile the solution:  
+    ```shell
+    git clone REPLACE_WITH_YOUR_FORK_URL.git
+    ```
+2. Go to the project folder and run RUN_THIS.py to initialize submodules and load the engine:
+    ```
+    cd REPLACE_WITH_REPO_FOLDER
+    python RUN_THIS.py
+    ```
+3. Compile the solution:
+    ```
+    dotnet build
+    ```
+More detailed upstream setup instructions:
+https://docs.spacestation14.com/en/general-development/setup.html
 
-Build the server using `dotnet build`.
-
-[More detailed instructions on building the project.](https://docs.spacestation14.com/en/general-development/setup.html)
+---
 
 ## License
 
-All code for the content repository is licensed under the [MIT license](https://github.com/space-wizards/space-station-14/blob/master/LICENSE.TXT).  
+All code for the content repository is licensed under the MIT license
+.
 
-Most assets are licensed under [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) unless stated otherwise. Assets have their license and copyright specified in the metadata file. For example, see the [metadata for a crowbar](https://github.com/space-wizards/space-station-14/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).  
+Most assets are licensed under CC-BY-SA 3.0
+unless stated otherwise. Assets have their license and copyright specified in the metadata file.
 
 > [!NOTE]
 > Some assets are licensed under the non-commercial [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) or similar non-commercial licenses and will need to be removed if you wish to use this project commercially.
